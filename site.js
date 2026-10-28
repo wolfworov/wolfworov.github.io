@@ -37,7 +37,7 @@
   data.works.forEach((work, index) => {
     const card = el('figure', 'gallery-card');
     card.append(approved(work) ? imageButton(work, false) : placeholder(false));
-    const caption = el('figcaption'); caption.append(el('span', '', work.title), el('span', 'muted', work.year || 'Awaiting artwork')); card.append(caption);
+    const caption = el('figcaption'); caption.append(el('span', '', work.title), el('span', 'muted', work.year || (approved(work) ? 'WolfRoad' : 'Awaiting artwork'))); card.append(caption);
     const source = safeUrl(work.source);
     if (source) { const link = el('a', 'text-link artwork-source', 'View original ↗'); link.href = source; card.append(link); }
     document.querySelector('#gallery-grid').append(card);

@@ -13,7 +13,7 @@ A responsive, dependency-free portfolio for GitHub Pages. Open `index.html` to p
 ## Add artwork
 
 1. Save an authorized web-sized file in `assets/`, for example `assets/voices.webp`. Use lowercase filenames without spaces. Keep original high-resolution files outside the public repository.
-2. Edit the corresponding entry in `content.js`: set `image` to its relative path, write an accurate `alt` description based on the actual image, set `permissionConfirmed: true`, and add its original official artwork page as `source` (an HTTPS URL). Voices already has this flag and its source link based on the requester's explicit authorization; its image is still missing because the original page blocked retrieval. No reposts were downloaded.
+2. Edit the corresponding entry in `content.js`: set `image` to its relative path, write an accurate `alt` description based on the actual image, set `permissionConfirmed: true`, and add its original official artwork page as `source` (an HTTPS URL). Voices and Mirror are included from files supplied by the requester with explicit authorization and original DeviantArt source links. Voices is the supplied clipboard PNG; replace it with a higher-quality artist file if available.
 3. Keep Voices as the first entry; it appears both in the hero and gallery. Add more entries or remove unused gallery slots as needed.
 4. Add only an artist-approved biography to `bio`. It is rendered as plain text.
 
